@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/soporte_db
+    username: postgres
+    password: 6435
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# CONFIGURACION DE JWT (Alineado completamente a la izquierda)
+jwt:
+  secret: "NDM1N2FkYjY1YzY4ZTM0Yzg5MThjMDk0MmNhN2UyZTYxYzg5MGJhNmUyOTM0YmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejEyMzQ1Njc4OTA="
+  expiration-ms: 86400000
